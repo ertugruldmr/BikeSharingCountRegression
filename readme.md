@@ -47,7 +47,7 @@
   <table>
     <tr>
     <td>
-        <a target="_blank" href="https://ertugruldemir-bikesharingcountregression.hf.space" height="30">[Demo app] HF Space</a>
+        <a target="_blank" href="https://ertugruldemir-bikesharingcountregression.hf.space" height="30"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" height="30">[Demo app] HF Space</a>
       </td>
       <td>
         <a target="_blank" href="https://colab.research.google.com/drive/1jCJUsewX5vzefILly8yRF6OMSDbxlp83
