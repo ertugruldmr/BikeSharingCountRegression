@@ -1,5 +1,5 @@
 catboost==1.1.1
-gradio==3.26.0
+gradio==3.27.0
 lightgbm==3.3.5
 matplotlib==3.6.2
 missingno==0.5.2
@@ -9,4 +9,5 @@ protobuf==4.22.3
 scikit_learn==1.2.2
 scipy==1.10.1
 seaborn==0.12.2
+statsmodels==0.13.5
 xgboost==1.7.5
