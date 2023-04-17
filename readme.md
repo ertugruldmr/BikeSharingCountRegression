@@ -39,7 +39,7 @@
 - The performance of the model is evaluated using several __metrics__, including _MaxError_, _MeanAbsoluteError_, _MeanAbsolutePercentageError_, _MSE_, _RMSE_, _MAE_, _R2_, _ExplainedVariance_ and other imbalanced regression metrics.
 
 #### __Overview__
-- This project involves building a machine learning model to predict the purchase amounts based on number of 17 features. 8 features are categorical and 9 features are numerical. The dataset contains 17379 records. The models selected according to model tuning results, the progress optimized respectively the previous tune results. The project uses Python and several popular libraries such as Pandas, NumPy, Scikit-learn.
+- This project involves building a machine learning model to predictpredict the rented bike counts based on number of 17 features. 8 features are categorical and 9 features are numerical. The dataset contains 17379 records. The models selected according to model tuning results, the progress optimized respectively the previous tune results. The project uses Python and several popular libraries such as Pandas, NumPy, Scikit-learn.
 
 #### __Demo__
 
@@ -254,9 +254,9 @@ The project aimed predict the house prices using the features. The study include
 
 ## Details
 
-### Abstract
-- [Bike Sharing Dataset](https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset) is used to predict the purchase amount. The dataset has 550068 records, 12 features which are 8 categorical and 4 numerical typed. The problem is supervised learning task as regression. The goal is predicting  a purchase value  correctly through using supervised machine learning algorithms such as non-linear, ensemble and similar model.The study includes creating the environment, getting the data, preprocessing the data, exploring the data, modelling the data, saving the results, deployment as demo app. Training phase of the models implemented through cross validation and Grid Search model tuning approachs. Hyperparameter tuning implemented Greedy Greed Search approach which tunes a hyper param at once a time while iterating the sorted order according the importance of the hyperparams. Models are evaluated with cross validation methods using 5 split. Regression results collected and compared between the models. Selected the basic and more succesful model. Tuned __lgbm regression__ model has __2959.133388__ RMSE , __2228.421937__ MAE, __0.655337__ R2, __0.655338__ Explained Variance, the other metrics are also found the results section. Created a demo at the demo app section and served on huggingface space.  
 
+### Abstract
+- [Bike Sharing Dataset](https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset) is used to predict the purchase amount. The dataset has 17379 records, 17 features which are 8 categorical and 9 numerical typed. The problem is supervised learning task as regression. The goal is predicting  a traffic density  correctly through using supervised machine learning algorithms such as non-linear, ensemble and similar model.The study includes creating the environment, getting the data, preprocessing the data, exploring the data, modelling the data, saving the results, deployment as demo app. Training phase of the models implemented through cross validation and Grid Search model tuning approachs. Hyperparameter tuning implemented Greedy Greed Search approach which tunes a hyper param at once a time while iterating the sorted order according the importance of the hyperparams. Models are evaluated with cross validation methods using 5 split. Regression results collected and compared between the models. Selected the basic and more succesful model. Tuned __catboost regression__ model has __40.84249__ RMSE , __24.49770__ MAE, __0.950362__ R2, __0.950362__ Explained Variance, the other metrics are also found the results section. Created a demo at the demo app section and served on huggingface space.  
 
 ### File Structures
 
@@ -301,13 +301,13 @@ The project aimed predict the house prices using the features. The study include
 #### __(A) Dependencies__:
   -  There is a third-parth installation which is kaggle dataset api, just follow the study codes it will be handled. The libraries which already installed on the environment are enough. You can create an environment via env/requirements.txt. Create a virtual environment then use hte following code. It is enough to satisfy the requirements for runing the study.ipynb which training pipeline.
 #### __(B) Dataset__: 
-  - Downloading the [__Black Friday Dataset__](https://www.kaggle.com/datasets/sdolezel/black-friday) via kaggle dataset api from kaggle platform. The dataset has 550068 records. There are 12 features which are 8 categorical and 4 numerical typed. For more info such as histograms and etc... you can look the '(D) Exploratory Data Analysis' chapter.
+
+  - Downloading the [Bike Sharing Dataset](https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset) via kaggle dataset api from kaggle platform. The dataset has 17379 records. There are 17 features which are 8 categorical and 9 numerical typed. For more info such as histograms and etc... you can look the '(D) Exploratory Data Analysis' chapter.
 #### __(C) Pre-processing__: 
   - The processes are below:
     - Preparing the dtypes such as casting the object type to categorical type.
     - Missing value processes: Finding the missing values and handled the missing value via dropping or imputation.
     - Outlier analysis processes: uses  both visual and IQR calculation apporachs. According to IQR approach, detected statistically significant outliers are handled using boundary value casting assignment method. (There was no outlier value as statistically significant)
-
       <div style="text-align: center;">
           <img src="docs/images/outliers.png" style="width: 600px; height: 150px;">
       </div>
